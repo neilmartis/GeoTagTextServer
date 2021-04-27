@@ -7,6 +7,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
+  console.log(process.env.Database_URL);
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
